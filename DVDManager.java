@@ -21,10 +21,10 @@ public class DVDManager {
 
 		System.out.println("Input interface type: C=Console, G=GUI");
 		String interfaceType = scan.nextLine();
-		if (interfaceType.equals("C")) {
+		if ("C".equals(interfaceType)) {
 			dlInterface = new DVDConsoleUI(dl);
 			dlInterface.processCommands();
-		} else if (interfaceType.equals("G")) {
+		} else if ("G".equals(interfaceType)) {
 			dlInterface = new DVDGUI(dl);
 			dlInterface.processCommands();
 		} else {

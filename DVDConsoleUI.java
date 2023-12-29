@@ -56,7 +56,7 @@ public class DVDConsoleUI implements DVDUserInterface {
 		// Request the title
 		System.out.println("Enter title");
 		String title = scan.nextLine();
-		if (title.equals("")) {
+		if ("".equals(title)) {
 			return;		// input was cancelled
 		}
 		title = title.toUpperCase();
@@ -64,7 +64,7 @@ public class DVDConsoleUI implements DVDUserInterface {
 		// Request the rating
 		System.out.println("Enter rating");
 		String rating = scan.nextLine();
-		if (rating.equals("")) {
+		if ("".equals(rating)) {
 			return;		// input was cancelled
 		}
 		rating = rating.toUpperCase();
@@ -72,7 +72,7 @@ public class DVDConsoleUI implements DVDUserInterface {
 		// Request the running time
 		System.out.println("Enter running time");
 		String time = scan.nextLine();	// NOTE: time read in as a String!
-		if (time.equals("")) {
+		if ("".equals(time)) {
 			return;		// input was cancelled
 		}
 
@@ -90,7 +90,7 @@ public class DVDConsoleUI implements DVDUserInterface {
 		// Request the title
 		System.out.println("Enter title");
 		String title = scan.nextLine();
-		if (title.equals("")) {
+		if ("".equals(title)) {
 			return;		// dialog was cancelled
 		}
 		title = title.toUpperCase();
@@ -110,7 +110,7 @@ public class DVDConsoleUI implements DVDUserInterface {
 		// Request the rating
 		System.out.println("Enter rating");
 		String rating = scan.nextLine();
-		if (rating.equals("")) {
+		if ("".equals(rating)) {
 			return;		// dialog was cancelled
 		}
 		rating = rating.toUpperCase();
