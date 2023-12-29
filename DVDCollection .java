@@ -1,4 +1,5 @@
 package assig1;
+import io.github.pixee.security.BoundedLineReader;
 import java.io.*;
 import java.util.Scanner;
 
@@ -209,7 +210,7 @@ public class DVDCollection {
 					   String[] info; 
 				           myFile = new BufferedReader(new FileReader(filename));		// reads the text from the string of characters within the file
 				           String file;
-				           while ((file = myFile.readLine()) != null) {
+				           while ((file = BoundedLineReader.readLine(myFile, 5_000_000)) != null) {
 				               info = file.split(",");									// splits the entire data into specific index position 
 				               addOrModifyDVD(info[0], info[1], info[2]);				// for example "Back to the future" will be in index location 0
 				           }															// "PG-13" will be in index location 1 (rating), and "433" will be in 
